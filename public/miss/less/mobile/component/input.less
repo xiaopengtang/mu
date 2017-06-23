@@ -1,0 +1,40 @@
+input{
+	outline: none;
+	border: none;
+	// border:  .01rem  solid @color-gray;
+	font-size: .14rem ;
+	&:focus,&.active{
+		border-color: @color-blue ;
+	}
+}
+.@{css-prefix}-input{
+	font-size: .14rem ;
+	.css-display-flex() ;
+	align-items : center ;
+	overflow: hidden;
+	.@{css-prefix}-input-left,.@{css-prefix}-input-right{
+		display: inline-block;
+		flex: 1 0 auto;
+	}
+	.@{css-prefix}-input-body{
+		flex: 1 0 auto;
+		display: inline-block;
+		border:  .01rem  solid @color-gray;
+		overflow: hidden;
+		&:focus,&.active{
+			border-color: @color-blue ;
+		}
+		padding: 0 .1rem ;
+		input{
+			width: 100% ;
+			padding: .08rem 0 ;
+		}
+	}
+	&.no-border{
+		.@{css-prefix}-input-body{
+			// input{
+				border: none;
+			// }
+		}
+	}
+}

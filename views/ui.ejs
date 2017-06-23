@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<title>MU UI</title>
+	<script src="//127.0.0.1/require/require.js" data-main="/dist/config.js" ></script>
+	<link rel="stylesheet" type="text/css" href="/dist/miss.mobile.css">
+	<link rel="stylesheet" type="text/css" href="/dist/ui.css">
+</head>
+<body>
+<script type="text/javascript">
+	// var _MENU_   =  '<%= JSON.stringify(menu) %>'
+</script>
+<div class="xp-page">
+</div>
+
+</body>
+<script type="text/javascript">
+	require(["domReady"] , function(domReady){
+		domReady(function(){
+			var $app     =  requirejs(["/dist/ui.js"]) ;
+		})
+	})
+</script>
+</html>

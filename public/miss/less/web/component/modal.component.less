@@ -1,0 +1,35 @@
+.@{css-prefix}-modal{
+	position: fixed;
+	/*left: 50% ;
+	top: 50% ;*/
+	// bottom: 0 ;
+	top: 0 ;
+	left: 50% ;
+	bottom: 0 ;
+	pointer-events : none ;
+	&:before{
+		text-align: center;
+		display: inline-block;
+		content: "" ;
+		vertical-align: middle;
+		height: 100% ;
+	}
+	// .css-transform( translateY(-50%) );
+	.@{css-prefix}-modal-container{
+		pointer-events : fill ;
+		z-index: @z-index-modal ;
+		display: inline-block;
+		vertical-align: middle;
+		// .css-transform( translateY(-50%) ) ;
+		background-color: @color-white ;
+		position: relative;
+		right: 50% ;
+		// top: 50% ;
+		.@{css-prefix}-modal-title{
+			font-size: .14rem ;
+		}
+		.@{css-prefix}-modal-body{
+			font-size: .14rem ;
+		}
+	}
+}

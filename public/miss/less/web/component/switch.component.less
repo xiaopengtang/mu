@@ -1,0 +1,32 @@
+.@{css-prefix}-switch{
+	cursor: pointer;
+	&.active{
+		.@{css-prefix}-switch-body{
+			background-color: @color-blue ;
+			&:before{
+				right: .02rem ;
+			}
+		}
+	}
+	.@{css-prefix}-switch-body{
+		width: .48rem ; 
+		height: .24rem ;
+		background-color: @color-gray ;
+		.css-radius(.24rem,.24rem,.24rem,.24rem);
+		position: relative;
+		.css-transition(all .3s ease-out);
+		&:before{
+			.css-transition(all .3s ease-out);
+			position: absolute;
+			content: "" ;
+			display: block;
+			background-color: @color-white ;
+			height: .2rem ;
+			width: .2rem ;
+			.css-radius(.24rem,.24rem,.24rem,.24rem);
+			top: .02rem ;
+			bottom: 0 ;
+			right: .26rem ;
+		}
+	}
+}

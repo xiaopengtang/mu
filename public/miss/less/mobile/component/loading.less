@@ -1,0 +1,35 @@
+.@{css-prefix}-loading{
+	position: fixed;
+	left: 0 ;
+	right: 0 ;
+	bottom: 0 ;
+	top: 0 ;
+	z-index: @z-index-loading ;
+	background-color: rgba(255, 255, 255, .6) ;
+	text-align: center;
+	&:before{
+		display: inline-block;
+		height: 100% ;
+		vertical-align: middle;
+		content: "" ;
+	}
+	.@{css-prefix}-loading-body{
+		vertical-align: middle;
+		display: inline-block;
+		.@{css-prefix}-loading-scale{
+			animation:loading 1.5s ease infinite;
+			.css-transform(scale(0));
+			&.other{
+				animation-delay: .5s ;
+			}
+			display: inline-block;
+			width: .15rem ;
+			height: .15rem ;
+			border-radius: 100% ;
+			background-color: @color-blue ;
+			&:not(:last-child){
+				margin-right: .05rem ;
+			}
+		}
+	}
+}

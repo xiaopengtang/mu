@@ -1,0 +1,16 @@
+.@{css-prefix}-tabs{
+	.@{css-prefix}-tabs-header{
+		.css-display-flex() ;
+		.@{css-prefix}-tabs-title{
+			padding: .08rem .1rem ;
+			flex: 1 0 auto ;
+			text-align: center;
+			font-size: .14rem ;
+			.css-transition(all .3s ease-out);
+			&.active{
+				background-color: @color-blue ;
+				color: @color-white ;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.@{css-prefix}-slide{
+	.@{css-prefix}-slide-body{
+		// .css-display-flex();
+		.css-transition(all .2s linear);
+		.@{css-prefix}-slide-item{
+			float: left;
+			&>img{
+				max-width: 100% ;
+			}
+		}
+		&:after{
+			content: "" ;
+			clear: both;
+			display: block;
+		}
+	}
+}

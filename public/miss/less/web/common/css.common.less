@@ -1,0 +1,43 @@
+.@{css-prefix}-left{
+	float: left;
+}
+.@{css-prefix}-right{
+	float: right;
+}
+.@{css-prefix}-css-block{
+	display: block;
+}
+.@{css-prefix}-css-font-break{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	-webkit-text-overflow:ellipsis;
+}
+.@{css-prefix}-css-i{
+	position: absolute;
+	&.x-center{
+		left: 50% ;
+		.css-transform( translate3d(-50%,0,0) );
+	}
+	&.center{
+		top: 50% ;
+		left: 50% ;
+		.css-transform( translate3d(-50%,-50%,0) );
+	}
+	&.y-center{
+		top: 50% ;
+		.css-transform( translate3d(0,-50%,0) );
+	}
+	&.right{
+		right: 0 ;
+	}
+	&.left{
+		left: 0 ;
+	}
+}
+.@{css-prefix}-css-hide{
+	display: none;
+}
+.@{css-prefix}-css-no-border{
+	border: none;
+}

@@ -1,0 +1,58 @@
+.@{css-prefix}-tabs{
+	.@{css-prefix}-tabs-body{
+		border: .01rem solid lighten(@color-gray, 30%) ;
+		border-top: none;
+		.@{css-prefix}-tabs-container{
+			font-size: .14rem ;
+			// padding: .1rem 0 ;
+		}
+	}
+	.@{css-prefix}-tabs-title{
+		border-bottom: .01rem solid lighten(@color-gray, 30%) ;
+		&:after{
+			display: table;
+			content: "" ;
+			clear: both;
+		}
+		&:before{
+			display: table;
+			content: "" ;
+		}
+		width: 100% ;
+		.@{css-prefix}-tab{
+			float: none;
+			position: relative;
+			width: 1% ;
+			// padding: 0 .16rem ;
+			cursor: pointer;
+			line-height: .4rem ;
+			height: .4rem ;
+			vertical-align: middle;
+			text-align: center;
+			font-size: .14rem ;
+			display: table-cell; //inline-block
+			border : .01rem solid transparent ;
+			.css-radius(.02rem;.02rem;0;0;);
+			border-bottom: none ;
+			.css-transition(all .3s cubic-bezier(.645,.045,.355,1));
+			&:hover{
+				color: lighten(@color-blue, 20%) ;
+			}
+			&.active{
+				border-color: lighten(@color-gray, 30%) ;
+				color: @color-blue ;
+				position: relative;
+				&:after{
+					position: absolute;
+					display: block;
+					content: "";
+					left: 0 ;
+					right: 0 ;
+					height: .01rem ;
+					background-color: #FFFFFF ;
+					bottom: -.01rem ;
+				}
+			}
+		}
+	}
+}

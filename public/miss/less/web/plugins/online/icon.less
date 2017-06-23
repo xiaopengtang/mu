@@ -1,0 +1,33 @@
+.@{plugins}.online{
+	
+	.online-icon{
+		position: fixed;
+		z-index: @z-index-online  ;
+		right: 0 ;
+		bottom: 0 ;
+		cursor: pointer;
+		background-color: @color-white ;
+		.online-icon-body{
+			min-width: 1.6rem ;
+			min-height: .36rem ;
+			padding: .08rem .1rem ;
+			.css-display-flex() ;
+			align-items : center ;
+			.online-icon-title{
+				font-size: .18rem ;
+				font-weight: inherit;
+				padding-left: .1rem ;
+			}
+			.online-icon-img{
+				width: .36rem ;
+				height: .36rem ;
+				overflow: hidden;
+				.css-radius(.36rem,.36rem,.36rem,.36rem);
+				img{
+					width: .36rem ;
+				    height: .36rem ;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.@{css-prefix}-tooltip{
+	.@{css-prefix}-tooltip-body{
+		@back-color   :  rgba(70,76,91,.9) ;
+		position: relative;
+		.@{css-prefix}-tooltip-title{
+			position: absolute;
+			.@{css-prefix}-tooltip-txt{
+				font-size: .12rem ;
+				background-color: @back-color ;
+			    color: @color-white ;
+				padding: .08rem .1rem ;
+				position: relative;
+				max-width: 1rem ;
+				&:after{
+					position: absolute;
+					display: block;
+					color: @color-white ;
+					border-bottom: .05rem  solid transparent;
+					border-left: .05rem solid  transparent;
+					border-right: .05rem solid  transparent;
+					border-top: .05rem  solid transparent;
+					content: "" ;
+				}
+			}
+			&.top{
+				bottom: 100% ;
+				top: inherit ;
+				left: 50% ;
+				margin-bottom: .06rem ;
+				.@{css-prefix}-tooltip-txt{
+					right: 50% ;
+					&:after{
+						top: 100% ;
+						left: 50%;
+						right: 50% ;
+						border-top-color : @back-color;
+						border-bottom: none;
+						.css-transform( translateX(-50%) );
+					}
+				}
+			}
+			&.bottom{
+				top: 100% ;
+				bottom: inherit ;
+				left: 50% ;
+				margin-top: .06rem ;
+				.@{css-prefix}-tooltip-txt{
+					right: 50% ;
+					&:after{
+						bottom: 100% ;
+						left: 50%;
+						right: 50% ;
+						border-bottom-color : @back-color;
+						border-top: none;
+						.css-transform( translateX(-50%) );
+					}
+				}
+			}
+			&.left{
+			}
+		}
+	}
+	
+}

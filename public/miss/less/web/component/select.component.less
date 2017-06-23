@@ -1,0 +1,84 @@
+.@{css-prefix}-select{
+	margin-left: .1rem ;
+	width: 1.7rem ;
+	// overflow: hidden;
+	position: relative;
+	//动画start
+	.@{css-prefix}-select-fade-enter-active, .@{css-prefix}-select-fade-leave-active {
+	    visibility: visible;
+	    .css-transition(all .3s ease-out) ;
+	    .css-opacity(1) ;
+	    .css-transform( none )
+	}
+	.@{css-prefix}-select-fade-enter, .@{css-prefix}-select-fade-leave-active {
+		visibility: hidden;
+	    .css-opacity(0) ;
+	    .css-transform( translateY(.2rem) )
+	}
+	//动画end
+	.@{css-prefix}-select-field{
+		input{
+			cursor: pointer;
+		}
+		&.active{
+			input{
+				@icon-down    :  ~"@{css-prefix}-icon-down" ;
+				border-color: @color-blue ;
+				&~i[class=@{icon-down}]{
+					.css-transform( translate3d(-.05rem,-50%,0) rotate(-180deg) );
+				}
+			}
+		}
+		i{
+			color: @color-gray ;
+			.css-transition(all .3s ease-out);
+		}
+	}
+	.@{css-prefix}-select-body{
+		position: absolute;
+		top: 100% ;
+		left: 0 ;
+		right: 0 ;
+		padding-left:.01rem ;
+		padding-top: .05rem ;
+		@ul-z-index   :  @z-index-body + 1 ;
+		z-index: @ul-z-index ;
+		ul{
+			background-color: #FFFFFF ;
+			// .css-box-shadow(0 .01rem .05rem @color-gray);
+			list-style: none;
+			padding: 0 .005999999999rem ;
+			li{
+				&.@{css-prefix}-select-search{
+					&:hover{
+						background-color: transparent;
+					}
+					text-align: center;
+					input{
+						padding: .05rem .05rem ;
+						font-size: .12rem ;
+					}
+					border-bottom: .01rem solid lighten(@color-gray, 30%) ;
+				}
+				&.disabled{
+					cursor: not-allowed ;
+					color: @color-gray ;
+					&:hover{
+						background-color: transparent;
+					}
+				}
+				font-size: .14rem ;
+				padding: .08rem .1rem ;
+				cursor: pointer;
+				.css-transition(all .3s ease-out);
+				&:hover{
+					background-color: lighten( @color-gray, 30%);
+				}
+				&.active{
+					background-color: @color-blue ;
+					color: #FFFFFF ;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.@{css-prefix}-back{
+	position: fixed;
+	top: 0 ;
+	bottom: 0 ;
+	left: 0 ;
+	right: 0 ;
+	background-color: rgba(0, 0, 0, 0) ;
+	.css-transition(all .3s ease-out) ;
+	z-index: -1 ;
+	visibility: hidden;
+	pointer-events : none ;
+	&.active{
+		visibility: visible;
+		z-index: inherit;
+		pointer-events: inherit; 
+		background-color: rgba(0, 0, 0, 0.5) ;
+	}
+	vertical-align: middle;
+	text-align: center;
+	&:before{
+		content: "";
+		display: inline-block;
+		height: 100% ;
+		vertical-align: middle;
+	}
+	.@{css-prefix}-back-body{
+		vertical-align: middle;
+		display: inline-block;
+	}
+}

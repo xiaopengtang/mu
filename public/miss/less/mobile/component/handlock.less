@@ -1,0 +1,21 @@
+.@{css-prefix}-handlock{
+	position: fixed;
+	left: 0 ;
+	right: 0 ;
+	top: 0 ;
+	bottom: 0 ;
+	z-index: @z-index-handlock ;
+	background-color: rgba(0, 0, 0, 0.5) ;
+	text-align: center;
+	&:before{
+		content: "" ;
+		display: inline-block;
+		height: 100% ;
+		vertical-align: middle;
+	}
+	.@{css-prefix}-handlock-canvas{
+		background-color: rgba(255, 255, 255,1) ;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

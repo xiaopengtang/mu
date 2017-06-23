@@ -1,0 +1,48 @@
+.@{css-prefix}-tip{
+	position: absolute;
+	z-index: @z-index-tip ;
+	top: .15rem ;
+	left: 50% ;
+	vertical-align: middle;
+	width: auto ;
+	.css-transition(all .5s ease-out);
+	&.warn{
+		.@{css-prefix}-tip-body{
+			.@{css-prefix}-tip-label{
+				background-color: @color-yellow ;
+			}
+		}
+	}
+	&.error{
+		.@{css-prefix}-tip-body{
+			.@{css-prefix}-tip-label{
+				background-color: @color-red ;
+			}
+		}
+	}
+	.@{css-prefix}-tip-body{
+		background-color: @color-white ;
+		position: relative;
+		right: 50% ;
+		.css-display-flex() ;
+		align-items: center ;
+		.@{css-prefix}-tip-label{
+			// margin: .01rem ;
+			background-color: @color-blue ;
+			color: @color-white ;
+			padding: .1rem ;
+			width: .14rem ;
+			text-align: center;
+			i{
+				line-height: 1 ;
+				font-size: .18rem ;
+			}
+		}
+		.@{css-prefix}-tip-txt{
+			padding: 0 .1rem ;
+			min-width: 2.4rem ;
+			font-size: .14rem ;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.@{css-prefix}-alert{
+	@px   :  ~"@{css-prefix}-alert" ;
+	background-color: #FFF ;
+	min-width: 3rem ;
+	overflow: hidden;
+	&>*{
+		text-align: center;
+	}
+
+	.@{px}-body{
+		padding: 0 .1rem ;
+		h2{
+			margin: 0 ;
+			padding: .08rem 0 ;
+			font-size: .18rem ;
+
+		}
+		.sub-txt{
+			font-size: .12rem ;
+			padding: .08rem 0 ;
+			color: @color-gray ;
+		}
+		border-bottom: 1px solid lighten(@color-gray, 30%) ;
+	}
+	.@{px}-btm{
+		padding: .08rem .1rem ;
+		font-size: .14rem ;
+		color: @color-blue ;
+	}
+}

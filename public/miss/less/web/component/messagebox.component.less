@@ -1,0 +1,28 @@
+.@{css-prefix}-messagebox{
+	.@{css-prefix}-alert{
+		
+		.@{css-prefix}-alert-bottom{
+			border-top: .01rem solid lighten(@color-gray, 30%) ;
+			cursor: pointer;
+			h2{
+				font-weight: inherit;
+				color: @color-blue ;
+				font-size: .16rem ;
+				padding: .08rem 0 ;
+			    text-align: center;
+				vertical-align: middle;
+				&:hover{
+					// color: lighten(@color-blue, 30%) ;
+				}
+			}
+		}
+		.@{css-prefix}-alert-body{
+			padding: .08rem 0 ;
+			font-size: .14rem ;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+	.@{css-prefix}-confirm{}
+	.@{css-prefix}-prompt{}
+}

@@ -1,0 +1,60 @@
+.@{plugins}.online{
+	&.online-win{
+		// .css-display-flex() ;
+		.online-users{
+			float: left;
+			width:  2rem ;
+		}
+		.online-mess-box{ 
+			float: right;
+			width:  6rem ;
+			.online-mess-footer{
+				.online-sub-btns{
+					.css-display-flex() ;
+					justify-content: flex-end ;
+					padding: .1rem ;
+					.online-btn{
+						cursor: pointer;
+						.css-radius(.03rem,.03rem,.03rem,.03rem) ;
+						background-color: @color-blue ;
+						color: @color-white ;
+						font-size: .14rem ;
+						min-width: .8rem ;
+						padding: .05rem ;
+						&:not(:last-child){
+							margin-right: .1rem ;
+						}
+					}
+				}
+			}
+			.online-mess-body{
+				height: 3rem ;
+			}
+			.online-mess-header{
+				position: relative;
+				.online-mess-ctrl{
+					position: absolute;
+					top: .05rem ;
+					right: .15rem ;
+					line-height: 1 ;
+					align-items: center ;
+					.css-display-flex();
+					i{
+						font-weight: inherit;
+						padding: 0 .02rem ;
+						font-size: .18rem ;
+						cursor: pointer;
+						color: @color-white ;
+						flex:1 0 .2rem ;
+						display: block;
+					}
+				}
+			}
+		}
+		&:after{
+			clear: both;
+			display: block;
+			content: "" ;
+		}
+	}
+}

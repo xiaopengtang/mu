@@ -1,0 +1,54 @@
+.@{css-prefix}-datepicker{
+	@px    :  ~"@{css-prefix}-datepicker" ;
+	position: fixed;
+	left: 0 ;
+	right: 0 ;
+	bottom: 0 ;
+	background-color: #FFF ;
+	padding: .08rem .1rem ;
+	.@{px}-table{
+		table{
+			width: 100% ;
+			tr{
+				th,td{
+					font-size: .14rem ;
+					padding: .08rem 0 ;
+				}
+				th{
+					font-weight: bold;
+					color: darken(@color-gray, 30%) ;
+				}
+				td{
+					.css-transition(all .3s ease-out) ;
+					&.active{
+						background-color: @color-blue ;
+						color: #FFF ;
+					}
+				}
+			}
+		}
+	}
+	.@{px}-ctrl{
+		padding: .08rem 0 ;
+		.@{px}-ctrl-line{
+			display: table-cell;
+			width: 1% ;
+			text-align: center;
+			&:last-child{
+				padding-left: .05rem ;
+			}
+			&:first-child{
+				padding-right: .05rem ;
+			}
+			i{
+				color: @color-blue ;
+				font-size: .16rem ;
+			}
+			span{
+				font-weight: bold;
+				color: darken(@color-gray, 30%) ;
+				font-size: .16rem ;
+			}
+		}
+	}
+}

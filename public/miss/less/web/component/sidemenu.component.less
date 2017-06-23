@@ -1,0 +1,16 @@
+.@{css-prefix}-sidemenu{
+	position: fixed;
+	top: 0 ;
+	bottom: 0 ;
+	right: 0 ;
+	&.left{
+		left: 0 ;
+	}
+	&.right{
+		right: 0 ;
+	}
+	width: .4rem ;
+	z-index: @z-index-on-body ;
+	background-color: @side-menu-back-color;
+	.@{css-prefix}-sidemenu-body{}
+}

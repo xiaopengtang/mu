@@ -1,0 +1,87 @@
+//fadein
+.@{css-prefix}-fadein-enter-active, .@{css-prefix}-fadein-leave-active {
+    visibility: visible;
+    .css-transition(all .3s ease-out) ;
+    .css-opacity(1) ;
+    // .css-transform( none )
+}
+.@{css-prefix}-fadein-enter, .@{css-prefix}-fadein-leave-active {
+	visibility: hidden;
+    .css-opacity(0) ;
+    // .css-transform( translateY(.2rem) )
+}
+.@{css-prefix}-fadein-btm-enter-active, .@{css-prefix}-fadein-btm-leave-active {
+    visibility: visible;
+    .css-transition(all .3s ease-out) ;
+    .css-opacity(1) ;
+    .css-transform( none )
+}
+.@{css-prefix}-fadein-btm-enter, .@{css-prefix}-fadein-btm-leave-active {
+    visibility: hidden;
+    .css-opacity(0) ;
+    .css-transform( translateY(.2rem) )
+}
+//fadein-top
+.@{css-prefix}-fadein-top-enter-active, .@{css-prefix}-fadein-top-leave-active {
+    visibility: visible;
+    .css-transition(all .3s ease) ;
+    .css-opacity(1) ;
+    .css-transform( none )
+}
+.@{css-prefix}-fadein-top-enter, .@{css-prefix}-fadein-top-leave-active {
+    visibility: hidden;
+    .css-opacity(0) ;
+    .css-transform( translateY(-.2rem) )
+}
+//fadein-right
+.@{css-prefix}-fadein-right-enter-active, .@{css-prefix}-fadein-right-leave-active {
+    visibility: visible;
+    .css-transition(all .3s ease-out) ;
+    .css-opacity(1) ;
+    .css-transform( translateX(0) ) ;
+}
+.@{css-prefix}-fadein-right-enter, .@{css-prefix}-fadein-right-leave-active {
+	visibility: hidden;
+    .css-opacity(0) ;
+    .css-transform( translateX(100%) )
+}
+//fadein-left
+.@{css-prefix}-fadein-left-enter-active, .@{css-prefix}-fadein-left-leave-active {
+    visibility: visible;
+    .css-transition(all .3s ease-out) ;
+    .css-opacity(1) ;
+    .css-transform( translateX(0) ) ;
+}
+.@{css-prefix}-fadein-left-enter, .@{css-prefix}-fadein-left-leave-active {
+	visibility: hidden;
+    .css-opacity(0) ;
+    .css-transform( translateX(-100%) )
+}
+
+//flipin-x
+.@{css-prefix}-rotate-in-enter-active, .@{css-prefix}-rotate-in-leave-active {
+    visibility: visible;
+    .css-transition(all .5s ease-out) ;
+    .css-opacity(1) ;
+    .css-transform( none )
+}
+.@{css-prefix}-rotate-in-enter, .@{css-prefix}-rotate-in-leave-active {
+    visibility: hidden;
+    .css-opacity(0) ;
+    // background-color: lighten(#FFFFFF, 10%) ;
+    .css-transform( rotateZ(-90deg) ) ;
+}
+
+//scale
+.@{css-prefix}-scale-in-enter-active, .@{css-prefix}-scale-in-leave-active {
+    // visibility: visible;
+    .css-transition(all .3s ease-in-out) ;
+    .css-opacity(1) ;
+    .css-transform( none )
+}
+.@{css-prefix}-scale-in-enter, .@{css-prefix}-scale-in-leave-active {
+    // visibility: hidden;
+    .css-opacity(0) ;
+    // background-color: lighten(#FFFFFF, 10%) ;
+    .css-transform( scale(0) ) ;
+}

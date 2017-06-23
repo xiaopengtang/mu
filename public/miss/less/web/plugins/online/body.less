@@ -1,0 +1,92 @@
+.@{plugins}.online{
+
+	.online-body{
+		.css-radius(.02rem,.02rem,.02rem,.02rem);
+		overflow: hidden;
+		position: fixed;
+	    right: 0 ;
+	    bottom: 0 ;
+	    z-index: @z-index-online ;
+	    width: 2.6rem ;
+	    .online-setting{
+	    	background-color: @color-white ;
+	    	.css-display-flex() ;
+	    	border-top: .01rem solid lighten(@color-gray, 30%) ;
+	    	padding: .1rem 0 ;
+	    	i{
+	    		cursor: pointer;
+	    		color: @color-gray ;
+	    		font-size: .18rem ;
+	    		text-align: center;
+	    		flex : 1 ;
+	    	}
+	    }
+	    .online-container{
+	    	background-color: #FFF ;
+	    	padding-top: 0 ;
+	    	height: 3.7rem ;
+	    	.online-group{
+	    		border-left: none;
+	    		border-right: none ;
+	    		border-top: none;
+	    	}
+	    	.@{css-prefix}-tabs-title{
+	    		border: none;
+	    	    background-color: @color-blue ;
+	    	    .css-display-flex() ;
+	    		.@{css-prefix}-tab{
+	    			flex : 1 ;
+	    			color: @color-white ;
+	    			border: none;
+	    			position: relative;
+	    			&:after{
+	    				position: absolute;
+	    				height: .04rem ;
+	    				left: 0 ;
+	    				right: 0 ;
+	    				bottom: 0 ;
+	    				background-color: transparent; ;
+	    			}
+	    			i{
+	    				font-size: .18rem ;
+	    			}
+	    			&.active{
+	    				color: @color-white ;
+	    				&:after{
+	    					background-color: @color-green ;
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+	    .online-header{
+	    	.online-sign{
+	    		padding: .05rem .1rem ;
+	    		font-size: .12rem ;
+	    		color: @color-white ;
+	    		&.is-editing{
+	    			margin: 0 .01rem ;
+	    			text-overflow : inherit ;
+	    			background-color: rgba(255, 255, 255, 1 ) ;
+	    			color: @color-black ;
+	    		}
+	    	}
+	    	color: @color-white ;
+	    	background-color: @color-blue ;
+	    	.online-title{
+	    		.css-display-flex() ;
+	    	    justify-content: space-between ;
+	    	    padding: .08rem .1rem ;
+	    	    align-items : center ;
+	    		.online-title-txt{
+	    			font-size: .16rem ;
+	    			color: @color-white ;
+	    		}
+	    		i{
+	    			cursor: pointer;
+	    			color: @color-white ;
+	    		}
+	    	}
+	    }
+	}
+}

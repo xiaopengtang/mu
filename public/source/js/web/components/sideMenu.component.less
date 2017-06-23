@@ -1,0 +1,16 @@
+@import "./component.config.less" ;
+.load-less(@ng){
+	.fn-position(@pos){
+		@{pos}   :  0 ;
+		position: fixed;
+		height: 100% ;
+		width: .5rem ;
+	}
+	.ui-side-left{
+		.fn-position(left) ;
+	}
+	
+	.@{prefix}-@{ng}{
+		.fn-position(right) ;
+	}
+}

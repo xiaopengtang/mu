@@ -1,0 +1,17 @@
+.@{css-prefix}-scrollbar{
+	@px   :  ~"@{css-prefix}-scrollbar" ;
+	overflow: hidden;
+	.@{px}-body{
+		.css-transition(all .1s linear) ;
+	}
+	position: relative;
+	.@{px}-bar{
+		position: absolute;
+		right: 0 ;
+		width: .05rem ;
+		top: 0 ;
+		background-color: @color-gray ;
+		opacity: .5rem ;
+		border-radius: .04rem ;
+	}
+}

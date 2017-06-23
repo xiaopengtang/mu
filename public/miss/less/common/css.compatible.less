@@ -1,0 +1,69 @@
+//透明
+.css-opacity(@p){
+	@px      :  @p*100 ;
+	filter:alpha(opacity= @px );  
+    -moz-opacity:@p;  
+    -khtml-opacity: @p;  
+    -webkit-opacity : @p ;
+    opacity: @p;  
+}
+.css-flex-wrap(@s){
+	-webkit-flex-wrap:@s ;
+    -webkit-box-lines:multiple;
+    -moz-flex-wrap:@s ;
+    flex-wrap:@s ;
+}
+.css-radius( @top-left , @top-right ,@b-left , @b-right ){
+	border-radius  :@top-left  @top-right @b-left  @b-right; 
+	border-top-left-radius: @top-left ; //左上角
+	border-top-right-radius: @top-right ; //右上角
+	border-bottom-right-radius:@b-right ; //右下角
+	border-bottom-left-radius:@b-left ; //左下角
+	-moz-border-radius-topleft:  @top-left ;//左上角
+	-moz-border-radius-topright: @top-right ; //右上角
+	-moz-border-radius-bottomright: @b-right ; //右下角
+	-moz-border-radius-bottomleft: @b-left ; //左下角
+	-webkit-border-top-left-radius: @top-left ;//左上角
+	-webkit-border-top-right-radius: @top-right ; //右上角
+	-webkit-border-bottom-right-radius: @b-right ;//右下角
+	-webkit-border-bottom-left-radius:@b-left; // 左下角
+}
+
+.css-transform( @s ){
+	transform: @s ;
+	-webkit-transform: @s ;     /* for Chrome || Safari */
+    -moz-transform: @s ;        /* for Firefox */
+    -ms-transform: @s ;         /* for IE */
+    -o-transform: @s ;          /* for Opera */
+}
+.css-transition(@s){
+	transition: @s;
+	-moz-transition: @s; /* Firefox 4 */
+	-webkit-transition: @s; /* Safari 和 Chrome */
+	-ms-transition: @s ;
+	-o-transition: @s; /* Opera */
+}
+.css-display-flex(){
+	display: box;              /* OLD - Android 4.4- */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.css-flex(@s){
+	/* 09版 */
+	-webkit-box-pack: @s;
+	/* 12版 */
+	-webkit-justify-content: @s;
+	-moz-justify-content: @s;
+	-ms-justify-content: @s;
+	-o-justify-content: @s;
+	justify-content: @s;
+}
+.css-box-shadow(@s){
+	-webkit-box-shadow: @s;
+    -moz-box-shadow: @s;
+    box-shadow: @s;
+}
+

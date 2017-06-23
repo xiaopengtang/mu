@@ -1,0 +1,21 @@
+.@{css-prefix}-text{
+	overflow: hidden;
+	&.not-allow{
+		position: relative;
+		&:after{
+			// line-height: 1 ;
+			background-color: #FFFFFF ;
+			content: " ..." ;
+			display: block;
+			right: 0 ;
+			bottom: 0 ;
+		}
+	}
+	&.allow{
+		word-break:break-all;
+		display:-webkit-box;
+		// -webkit-line-clamp:2;
+	    -webkit-box-orient:vertical;
+		overflow:hidden;
+	}
+}

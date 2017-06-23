@@ -1,0 +1,54 @@
+.@{css-prefix}-notify-group{
+	position: fixed;
+	right: .2rem  ;
+	top: .85rem ;
+	// margin-right: .2rem ;
+	z-index: @z-index-notify ;
+
+	.@{css-prefix}-notify{
+		.css-display-flex();
+		background-color: @color-white ;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			position: absolute;
+			top: 0 ;
+			bottom: 0 ;
+			left: 0 ;
+			width: .04rem ;
+			content: "" ;
+			display: block;
+			background-color: @color-blue ;
+			.css-radius(.05rem,0 ,.05rem,0 ); // BUG
+		}
+		.@{css-prefix}-notify-body{
+			h3{
+				line-height: 1 ;
+				font-size: .18rem ;
+				font-weight: inherit;
+				padding: .08rem 0 ;
+				// padding-right: .1rem ;
+			}
+			.@{css-prefix}-notify-txt{
+				// padding: .08rem 0 ;
+				font-size: .14rem ;
+				padding-bottom: .08rem ;
+				// padding-right: .1rem ;
+			}
+		}
+		min-width: 3.2rem ;
+		.css-radius(.05rem,.05rem,.05rem,.05rem);
+		// padding: 0 .1rem ;
+		padding : 0 .2rem 0 .15rem ;
+		margin-bottom: .1rem ;
+		i{
+			cursor: pointer;
+			position: absolute;
+			top: .08rem ;
+			right: .08rem ;
+			font-size: .12rem ;
+			font-weight: inherit;
+			color: @color-gray ;
+		}
+	}
+}

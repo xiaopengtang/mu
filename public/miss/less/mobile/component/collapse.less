@@ -1,0 +1,20 @@
+.@{css-prefix}-collapse{
+	.@{css-prefix}-collapse-item{
+		&>.@{css-prefix}-icon{
+			i{
+				.css-transition(all .3s ease-out );
+			}
+		}
+		&.active{
+			&>.@{css-prefix}-icon{
+				i{
+					.css-transform( rotate(90deg) );
+				}
+			}
+		}
+		
+		.@{css-prefix}-collapse-body{
+			// display: none;
+		}
+	}
+}

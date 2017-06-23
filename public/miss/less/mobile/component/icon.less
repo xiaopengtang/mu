@@ -1,0 +1,19 @@
+.@{css-prefix}-icon{
+	.css-display-flex(); 
+	justify-content: space-between ;
+	padding:  .1rem ;
+	&>*{
+		font-size: .14rem ;
+	}
+	h2{
+		font-weight: inherit;
+	}
+	i{
+		font-size: .16rem ;
+	    color: @color-gray ;
+	    
+	}
+	&:not(:last-child){
+		border-bottom: 1px solid lighten(@color-gray, 30%) ;
+	}
+}

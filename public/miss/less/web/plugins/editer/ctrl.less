@@ -1,0 +1,34 @@
+.@{plugins}.editer{
+	.editer-ctrl{
+		.editer-ctrl-group{
+			.css-display-flex();
+			.editer-ctrl-item{
+				flex:0 0 .5rem ;
+				position: relative;
+				.editer-face{
+					top: 100% ;
+					margin-top: .05rem ;
+					padding: .08rem .1rem ;
+					z-index: 2 ;
+					position: absolute;
+					.css-display-flex();
+					width: 4.5rem ;
+					background-color: @color-white ;
+					flex-wrap: wrap ; 
+					i{
+						margin: .02rem ;
+						// display: block;
+					}
+				}
+				i{
+					font-size: .2rem ;
+					cursor: pointer;
+					color: @color-gray ;
+					&.active{
+						color: @color-blue ;
+					}
+				}
+			}
+		}
+	}
+}

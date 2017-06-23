@@ -1,0 +1,16 @@
+//静态资源
+@import "./adapter/web.adapter.less" ;
+
+.face-em-loop(@n) when (@n > 0) {
+    .face-em-loop((@n - 1));    // 递归调用自身
+    @em       :  ~"@{css-prefix}-em-face-@{n}" ;
+    .@{em}{
+  	    background-image: data-uri("./static/face/@{n}.gif") ;
+  	    background-repeat: no-repeat;
+  	    background-size: contain ;
+  	    display: inline-block;
+  	    width: .25rem ;
+		height: .25rem ;
+    }
+}
+.face-em-loop(75);

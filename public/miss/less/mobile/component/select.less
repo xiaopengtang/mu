@@ -1,0 +1,27 @@
+.@{css-prefix}-select{
+	@px    :  ~"@{css-prefix}-select" ;
+	padding: .08rem 0 ;
+	position: fixed;
+	left: 0 ;
+	right: 0 ;
+	bottom: 0 ;
+	background-color: #FFF ;
+	.@{px}-ctrl{
+		padding: .08rem .1rem ;
+		.@{px}-ctrl-line{
+			display: table-cell;
+			width: 1% ;
+			line-height: 1 ;
+			font-size: .16rem ;
+			&:first-child{
+				text-align: left;
+				color: darken(@color-gray, 30%) ;
+			}
+			&:last-child{
+				text-align: right;
+				color: @color-blue ;
+			}
+		}
+	}
+	.@{px}-body{}
+}

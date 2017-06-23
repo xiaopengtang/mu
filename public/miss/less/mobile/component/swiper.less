@@ -1,0 +1,17 @@
+.@{css-prefix}-swiper{
+	overflow: hidden;
+	width: 100% ;
+	.@{css-prefix}-swiper-container{
+		.@{css-prefix}-swiper-item{
+			.css-transition(all .3s linear) ;
+			position: relative;
+			float: left;
+		}
+		&:after{ 
+			clear: both;
+			display: block;
+			content: "" ;
+		}
+	}
+	
+}

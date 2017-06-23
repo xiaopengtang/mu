@@ -1,0 +1,39 @@
+@import "./adapter/mobile.adapter.less" ;
+@import "./common/entry.common.less" ;
+@import "./vendor/entry.vendor.less" ;
+@import "./mobile/entry.less" ;
+*{
+	font-size: .1rem ;
+	color: @color-black ;
+	margin: 0 ;
+	padding: 0 ;
+}
+img{
+	position: relative;
+	width : 100% ;
+	height: auto;
+	vertical-align: bottom;
+	min-height: .5rem ;
+	&:before{
+		position: absolute;
+		left: 0 ;
+		right: 0 ;
+		top: 0 ;
+		bottom: 0 ;
+		content: "" ;
+		display: block;
+		background-color: lighten(@color-gray, 20%) ;
+	}
+	&:after{
+		content: "\f127" " 图片加载失败 " ;
+        display: inline-block;
+        font-size: .14rem;
+        position: absolute;
+        left: 0 ;
+        right: 0 ;
+        top: 50% ;
+        line-height: 1 ;
+        .css-transform( translateY(-50%) );
+        text-align: center;
+	}
+}

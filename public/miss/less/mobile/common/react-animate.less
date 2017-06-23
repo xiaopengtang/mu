@@ -1,0 +1,90 @@
+//fade-left
+.@{css-prefix}-fade-left-enter{
+	.css-transform( translateX(100%) ) ;
+	.css-transition( all .3s ease-out );
+	opacity: 0 ;
+	visibility: hidden;
+	&.@{css-prefix}-fade-left-enter-active{
+		.css-transform( none ) ;
+		opacity: 1 ;
+		visibility: visible;
+	}
+}
+.@{css-prefix}-fade-left-leave{
+	.css-transform( translateX(none) ) ;
+	.css-transition( all .3s ease-out );
+	opacity: 0 ;
+	visibility: hidden;
+	&.@{css-prefix}-fade-left-leave-active{
+		.css-transform( 100% ) ;
+		opacity: 1 ;
+		visibility: visible;
+	}
+}
+//fade-top
+.@{css-prefix}-fade-top-enter{
+	.css-transform( translateY(-100%) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-top-enter-active{
+		.css-transform( none ) ;
+	}
+}
+.@{css-prefix}-fade-top-leave{
+	.css-transform( translateY(-100%) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-top-leave-active{
+		.css-transform( none ) ;
+	}
+}
+//fade-top
+.@{css-prefix}-fade-bottom-enter{
+	.css-transform( translateY(100%) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-bottom-enter-active{
+		.css-transform( none ) ;
+	}
+}
+.@{css-prefix}-fade-bottom-leave{
+	.css-transform( translateY(100%) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-bottom-leave-active{
+		.css-transform( none ) ;
+	}
+}
+
+//fade-in
+.@{css-prefix}-fade-in-enter{
+	opacity: 0 ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-in-enter-active{
+		// .css-transform( none ) ;
+		opacity: 1 ;
+	}
+}
+.@{css-prefix}-fade-in-leave{
+	opacity: 0 ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-in-leave-active{
+		// .css-transform( none ) ;
+		opacity: 1 ;
+	}
+}
+//fade-scale-big
+.@{css-prefix}-fade-scale-big-enter{
+	opacity: 0 ;
+	.css-transform( scale(1.5) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-scale-big-enter-active{
+		.css-transform( none ) ;
+		opacity: 1 ;
+	}
+}
+.@{css-prefix}-fade-scale-big-leave{
+	opacity: 0 ;
+	.css-transform( scale(1.5) ) ;
+	.css-transition( all .3s ease-out );
+	&.@{css-prefix}-fade-scale-big-leave-active{
+		.css-transform( none ) ;
+		opacity: 1 ;
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html style="font-size:625%;">
+<head>
+	<title>首页</title>
+	<script src="//127.0.0.1/require/require.js" data-main="//127.0.0.1:4000/dist/config.js" ></script>
+	<link rel="stylesheet" type="text/css" href="/dist/miss.web.css">
+</head>
+<style type="text/css">
+a{
+	display: inline-block;
+}
+a img{
+	vertical-align: bottom;
+}
+</style>
+<body>
+<div class="xp-page">
+	<Slide message="测试" :data="slide.list" :demo="greet"></Slide>
+	<Sidemenu position="right"></Sidemenu>
+	<Search >测试</Search>
+</div>
+
+</body>
+<script type="text/javascript">
+	/*require(["css!/dist/css/modules/Home/m-Index.css","/dist/app.js"],function(run){
+		// console.log( run.default() )
+	})*/
+	require(["/dist/web.js"] , function(){})
+</script>
+</html>

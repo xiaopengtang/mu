@@ -1,0 +1,45 @@
+.@{css-prefix}-checkbox{
+	display: inline-block;
+	label{
+		display: inline-block;
+
+		.@{css-prefix}-checkbox-label{
+			vertical-align: middle;
+			display: table-cell;
+			padding: 0 .05rem ;
+			line-height: normal;
+			font-size: .12rem ;
+		}
+		.@{css-prefix}-checkbox-body{
+			display: table-cell;
+			cursor: pointer;
+			width: .18rem ;
+			height: .18rem ;
+			
+			.css-radius(.05rem , .05rem , .05rem , .05rem );
+			border: .01rem solid @color-gray ;
+			&:hover{
+				border-color: lighten(@color-blue, 20%) ;
+			}
+			.css-transition(all .3s ease-out );
+			&.active{
+				border-color: @color-blue ;
+				background-color: @color-blue ;
+				position: relative;
+				&:after{
+					width: .1rem ;
+					height: .05rem ;
+					border: .02rem solid @color-white ;
+					bottom: 50% ;
+					left: 50% ;
+					border-right: none;
+					border-top: none;
+					.css-transform( translate3d(-50%,25%,0) rotate(-45deg) ) ;
+					position: absolute;
+					content: "" ;
+					display: block;
+				}
+			}
+		}
+	}
+}

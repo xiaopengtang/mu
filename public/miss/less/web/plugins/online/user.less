@@ -1,0 +1,104 @@
+.@{plugins}.online{
+	.online-user{
+		&.big{
+			align-items : center ;
+			background-color: @color-blue ;
+			&:hover{
+				background-color: @color-blue ;
+			}
+			cursor: inherit;
+			padding-top: .15rem ;
+			padding-bottom: .15rem ;
+			.online-user-header{
+				width: .45rem ;  //  why
+				height: .45rem ;
+				.css-radius(.45rem ,.45rem ,.45rem ,.45rem ) ;
+				flex : 0 0 .45rem ;
+				img{
+					width: .45rem ;  //  why
+				    height: .45rem ;
+				}
+			}
+			.online-user-name{
+				vertical-align: middle;
+				.online-nickname{
+					color: @color-white ;
+				}
+				.online-user-sign{
+					color: @color-white ;
+				}
+			}
+		}
+		&.only-header{
+			align-items : center ;
+			position: relative;
+			i{
+				position: absolute;
+				width: .2rem ;
+				height: .2rem ;
+				line-height: .2rem ;
+				text-align: center;
+				vertical-align: middle;
+				font-size: .14rem ;
+				display: block;
+				color: @color-gray ;
+				visibility: hidden;
+				right: 0 ;
+				// .css-transition(all .3s ease-out) ;
+			}
+			&:hover{
+				i{
+					visibility: visible;
+				}
+			}
+			&.active{
+				i{
+					visibility: visible;
+				}
+			}
+		}
+		cursor: pointer;
+		padding: .08rem .1rem ;
+		&:not(:last-child){
+			// padding-bottom: .15rem ;
+		}
+		&:first-child{
+			// padding-top: .08rem ;
+		}
+		&:last-child{
+			// padding-bottom: .08rem ;
+		}
+		.css-transition(all .3s ease-out) ;
+		&.active{
+			background-color: lighten(@color-gray, 30%) ;
+		}
+		&:hover{
+			background-color: lighten(@color-gray, 30%) ;
+		}
+		.css-display-flex() ;
+		.online-user-header{
+			width: .36rem ;  //  why
+			height: .36rem ;
+			overflow: hidden;
+			.css-radius(.36rem ,.36rem ,.36rem ,.36rem ) ;
+			flex : 0 0 .36rem ;
+			img{
+				width: .36rem ;  //  why
+			    height: .36rem ;
+			}
+		}
+		.online-user-name{
+			padding-left: .1rem ;
+			overflow: hidden;
+			.online-nickname{
+				font-size: .14rem ;
+				font-weight: inherit;
+				padding-bottom: .05rem ;
+			}
+			.online-user-sign{
+				font-size: .12rem ;
+				color: @color-gray ;
+			}
+		}
+	}
+}

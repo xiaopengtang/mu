@@ -1,0 +1,25 @@
+.@{css-prefix}-form{
+	@px   :  ~"@{css-prefix}-form" ;
+	.@{px}-body{
+		&.line{
+			.@{px}-item{
+				display: inline-block;
+			}
+		}
+		.@{px}-item{
+			width: 100% ;
+			// padding: .08rem 0 ;
+			display: table ;
+			border-bottom: 1px solid lighten(@color-gray, 30%) ;
+			.@{px}-item-label{
+				display: table-cell;
+				font-size: .14rem ;
+				padding: 0 .05rem ;
+				text-align: center;
+			}
+			.@{px}-item-body{
+				display: table-cell;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.@{css-prefix}-button{
+	@px   :  ~"@{css-prefix}-button" ;
+	padding: .08rem ;
+	&>*{
+		font-size: .14rem ;
+	}
+	.css-radius(.05rem,.05rem,.05rem,.05rem) ;
+	overflow: hidden;
+	border: .01rem solid lighten(@color-gray, 30%) ;
+	&[type]{
+		&>*{color: #FFF ;}
+	}
+	&[type=primary]{
+		background-color: @color-blue ;
+	}
+	&[type=error]{
+		background-color: @color-red ;
+	}
+	&[type=warn]{
+		background-color: @color-yellow ;
+	}
+	&[type=success]{
+		background-color: @color-green ;
+	}
+}

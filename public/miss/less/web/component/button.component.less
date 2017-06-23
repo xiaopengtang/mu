@@ -1,0 +1,27 @@
+.@{css-prefix}-button{
+	padding: .1rem .15rem ;	
+	.css-box-shadow(0 .01rem .05rem @color-gray);
+	.css-transition(all .5s ease-out);
+	cursor: pointer;
+	&:hover{
+		background-color: lighten(@color-gray, 30%) ;
+	}
+	line-height: 1 ;
+	vertical-align: middle;
+	i{
+		font-size: .14rem ;
+		color: @color-gray ;
+		vertical-align: bottom;
+		line-height: .14rem ;
+		height: .14rem ;
+	}
+	span{
+		vertical-align: bottom;
+		line-height: 1 ;
+		font-size: .14rem ;
+	}
+	&.small{
+		padding: .05rem .1rem ;
+	}
+}
+.@{css-prefix}-button-field{}

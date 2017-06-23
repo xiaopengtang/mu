@@ -1,0 +1,29 @@
+.@{css-prefix}-tabbar{
+	position: fixed;
+	bottom: 0 ;
+	left: 0 ;
+	right: 0 ;
+	border-top: 1px solid lighten( @color-gray , 30%) ;  
+	.css-display-flex();
+	.@{css-prefix}-tabbar-bar{
+		background-color: @color-blue ;
+		padding: .05rem 0 ;
+		flex: 1 0 auto ;
+		text-align: center;
+		&.active{
+			background-color: darken(@color-blue, 20%) ;
+		}
+		&>*{
+			color: @color-white ;
+		}
+		i{
+			font-size: .2rem ;
+		}
+		h2{
+			padding-top: .05rem ;
+			font-weight: inherit;
+			font-size: .12rem ;
+			line-height: 1 ;
+		}
+	}
+}

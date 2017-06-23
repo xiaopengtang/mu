@@ -1,0 +1,26 @@
+.@{css-prefix}-tobar{
+	position: relative;
+	overflow: hidden;
+	min-width: .5rem ;
+	min-height: 1rem ;
+	&:hover{
+		.@{css-prefix}-tobar-y-ctrl{
+			background-color: rgba(0, 0, 0, 0.3) ;
+		}
+	}
+	.@{css-prefix}-tobar-body{
+		.css-transition(all .3s linear);
+	}
+	.@{css-prefix}-tobar-y-ctrl{
+		cursor: pointer;
+		position: absolute;
+		width: .05rem ;
+		background-color: rgba(0, 0, 0, 0 ) ;
+		overflow: hidden;
+		.css-radius( .05rem ,.05rem ,.05rem ,.05rem  );
+		top: 0 ;
+		right: 0 ;
+		.css-transition(all .3s linear);
+	}
+
+}
